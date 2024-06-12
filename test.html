@@ -3,78 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Button Hover Animation</title>
-    <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            background-color: #f0f0f0;
-        }
+    <title>Infinite Scrolling Logos</title>
+<style>
+    body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: Arial, sans-serif;
+}
 
-        .button {
-            position: relative;
-            display: inline-block;
-            padding: 15px 30px;
-            font-size: 16px;
-            color: #fff;
-            background-color: #007bff;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            overflow: hidden;
-            transition: background-color 0.3s ease-out;
-        }
+.logo-container {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+    background-color: #f4f4f4;
+    padding: 20px 0;
+    box-sizing: border-box;
+}
 
-        .button::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: yellow;
-            z-index: 1;
-            transform: scaleX(0);
-            transform-origin: left;
-            transition: transform 0.5s ease-out;
-        }
+.logo-slider {
+    display: inline-block;
+    white-space: nowrap;
+    animation: scroll 20s linear infinite;
+}
 
-        .button:hover::before {
-            transform: scaleX(1);
-        }
+.logo-slider img {
+    width: 100px; /* Adjust size as needed */
+    height: auto;
+    display: inline-block;
+    margin: 0 10px;
+}
 
-        .button span {
-            position: relative;
-            z-index: 2;
-        }
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
 
-        .button:hover {
-            background-color: #007bff; /* Maintain the original background color */
-        }
-
-        .button::after {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: #007bff;
-            z-index: 1;
-            opacity: 0;
-            transition: opacity 0.5s ease-out 0.5s; /* Delay to match the hover in animation */
-        }
-
-        .button:hover::after {
-            opacity: 1;
-        }
-
-    </style>
+</style>
 </head>
 <body>
-    <button class="button"><span>Hover me</span></button>
+    <div class="logo-container">
+        <div class="logo-slider">
+            <img src="https://via.placeholder.com/100?text=Logo1" alt="Logo 1">
+            <img src="https://via.placeholder.com/100?text=Logo2" alt="Logo 2">
+            <img src="https://via.placeholder.com/100?text=Logo3" alt="Logo 3">
+            <img src="https://via.placeholder.com/100?text=Logo4" alt="Logo 4">
+            <img src="https://via.placeholder.com/100?text=Logo5" alt="Logo 5">
+            <!-- Repeat logos for seamless scrolling -->
+            <img src="https://via.placeholder.com/100?text=Logo1" alt="Logo 1">
+            <img src="https://via.placeholder.com/100?text=Logo2" alt="Logo 2">
+            <img src="https://via.placeholder.com/100?text=Logo3" alt="Logo 3">
+            <img src="https://via.placeholder.com/100?text=Logo4" alt="Logo 4">
+            <img src="https://via.placeholder.com/100?text=Logo5" alt="Logo 5">
+        </div>
+    </div>
 </body>
 </html>
