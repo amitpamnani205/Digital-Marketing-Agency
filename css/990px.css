@@ -179,7 +179,7 @@
 
     .main_page_items {
         display: grid;
-        grid-template-columns: 80%;
+        grid-template-columns: 100%;
     }
 
     .main-page_left-area h5 {
