@@ -1,65 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Infinite Scrolling Logos</title>
-<style>
-    body {
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-    font-family: Arial, sans-serif;
-}
-
-.logo-container {
-    overflow: hidden;
-    white-space: nowrap;
-    width: 100%;
-    background-color: #f4f4f4;
-    padding: 20px 0;
-    box-sizing: border-box;
-}
-
-.logo-slider {
-    display: inline-block;
-    white-space: nowrap;
-    animation: scroll 20s linear infinite;
-}
-
-.logo-slider img {
-    width: 100px; /* Adjust size as needed */
-    height: auto;
-    display: inline-block;
-    margin: 0 10px;
-}
-
-@keyframes scroll {
-    0% {
-        transform: translateX(0);
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Change Icon Color on Hover with Delay</title>
+  <style>
+    ul {
+      padding: 0;
     }
-    100% {
-        transform: translateX(-50%);
-    }
-}
 
-</style>
+    li {
+      list-style: none;
+      cursor: pointer; /* Makes the list item clickable */
+      padding: 10px;
+      border: 1px solid #ccc; /* Optional: to visually distinguish the list items */
+      margin-bottom: 5px;
+    }
+
+    .icon {
+      transition: color 0.3s ease 0.5s; /* Adds a delay and duration to the color change */
+    }
+
+    li:hover .icon {
+      color: red; /* Change this to your desired color */
+    }
+  </style>
 </head>
 <body>
-    <div class="logo-container">
-        <div class="logo-slider">
-            <img src="https://via.placeholder.com/100?text=Logo1" alt="Logo 1">
-            <img src="https://via.placeholder.com/100?text=Logo2" alt="Logo 2">
-            <img src="https://via.placeholder.com/100?text=Logo3" alt="Logo 3">
-            <img src="https://via.placeholder.com/100?text=Logo4" alt="Logo 4">
-            <img src="https://via.placeholder.com/100?text=Logo5" alt="Logo 5">
-            <!-- Repeat logos for seamless scrolling -->
-            <img src="https://via.placeholder.com/100?text=Logo1" alt="Logo 1">
-            <img src="https://via.placeholder.com/100?text=Logo2" alt="Logo 2">
-            <img src="https://via.placeholder.com/100?text=Logo3" alt="Logo 3">
-            <img src="https://via.placeholder.com/100?text=Logo4" alt="Logo 4">
-            <img src="https://via.placeholder.com/100?text=Logo5" alt="Logo 5">
-        </div>
-    </div>
+  <ul>
+    <li>
+      <i class="icon">★</i>
+      Item 1
+    </li>
+    <li>
+      <i class="icon">★</i>
+      Item 2
+    </li>
+    <li>
+      <i class="icon">★</i>
+      Item 3
+    </li>
+  </ul>
 </body>
 </html>

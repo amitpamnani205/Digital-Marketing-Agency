@@ -25,7 +25,7 @@
         max-width: 1350px;
         width: 100%;
         margin: 0px auto;
-        padding: 0 28px;
+        padding: 0 10px;
     }
 
     .top-bar-content {
@@ -477,5 +477,113 @@
         font-family: "Outfit", sans-serif;
         font: 18px;
     }
+
+    .our-service{
+        display: grid;
+        grid-template-columns: 55% 45%;
+    }
+
+    .our-service_left p{
+        color: #ffffff;
+        font-family: "Outfit", sans-serif;
+
+        font-weight: 300;
+
+    }
+
+
+    .our-service_ul li{
+        color: #ffffff;
+        border-bottom: 2px solid rgb(255 255 255 / 12%);
+        padding: 50px 0;
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    .our-service_ul li h5{
+        color: #f6d273;
+        font-family: "Outfit", sans-serif;
+        font-size: 20px;
+        font-weight: 400;
+   
+
+    }
+
+    .our-service_ul li span{
+        color: #ffffff;
+        font-family: "Outfit", sans-serif;
+        font-size: 25px;
+        font-weight: 700;
+        padding-left: 30px;
+
+
+
+    }
+
+    .our-service_ul li i{
+        transform: rotate(310deg);
+        transition: color 0.3s ease 0.5s;
+
+    }  
+
+
+
+    .our-service_ul li:hover .service-icon{
+        color: #f6d273;
+        transform: rotate(310deg);
+    }
+
+    .view-service_btn{
+        height: 62px;
+        width: 270px;
+        border: none;
+        background-color: #30665f;
+        font-size: 18px;
+        font-family: "Roboto", sans-serif;
+        font-weight: 700;
+        color: #ffffff;
+        border-radius: 12px;
+        margin: 80px 0;
+        
+    }
+    .view-service_btn i{
+        position: relative;
+        left: 20px;
+        top: 2px;
+
+    }
+
+    .our-service_right{
+        margin-left: 100px;
+    }
+
+    .service-right_content h4{
+        padding: 13px 19px;
+    background-color: rgba(255, 255, 255, .06);
+    color: #f6d273;
+    font-weight: 400;
+    border-radius: 5px;
+    font-family: "Outfit", sans-serif;
+    font-size: 16px;
+    display: inline-block;
+    font-weight: 300;
+    }
+
+    .service-right_content h2{
+         font-size: 2.5rem;
+         font-family: "Outfit", sans-serif;
+         color: #ffffff;
+         margin: 40px 0;
+
+    }
+
+    .service-right_img img{
+        width: 100%;
+        border-radius: 40px 40px 40px 270px;
+    }
+
+
+    
 
 }
