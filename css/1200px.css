@@ -582,6 +582,116 @@
         border-radius: 40px 40px 40px 270px;
     }
 
+    .projects-section{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        color: #ffffff;
+
+    }
+
+    .project-area img{
+        width: 100%;
+
+        border-radius: 10px;
+
+        
+    }
+    .project-area{
+        margin: 10px;
+    }
+
+    .our-project_title{
+        text-align: center;
+        color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 80px 22rem;
+
+
+    }
+    .our-project_title .our-project_heading{
+
+        padding: 20px 30px;
+        background-color: rgba(255, 255, 255, .06);
+        color: #f6d273;
+        font-weight: 400;
+        border-radius: 5px;
+        display: inline-block;
+        font-family: "Roboto", sans-serif;
+        font-size: 18px;
+        margin: 50px 0;
+
+    }
+
+    .our-project_title h2{
+        font-size: 3rem;
+        font-family: "Outfit", sans-serif;
+        font-weight: 600;
+
+
+    }
+ 
+    .image-title {
+        position: relative;
+        bottom: 140px;
+        left: 30px;
+        background-color: #30665f;
+        width: 500px;
+        padding: 10px 20px;
+        display: flex;
+        align-items: center;
+        border-radius: 10px;
+        clip-path: polygon(0 0, calc(100% - 0px) 0, 100% 0%, calc(100% - 70px) 132%, 0 100%);
+    }
+    .title-name small{
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-size: 15px;
+       color:  rgb(255 255 255 / 57%);
+    }
+
+    .title-name{
+        margin: 22px 25px 0 0;
+    }
+
+    .title-name p{
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-size: 17px;
+       color:  #d0d0d0;
+       margin: 15px 0;
+       
+
+
+    }
+
+    .title-role{
+        margin: 10px 0;
+        border-left: 1px solid rgb(255 255 255 / 21%);
+        padding: 0 25px;
+    }
+
+    .title-role h5{
+        font-family: "Outfit", sans-serif;
+        font-size: 26px;
+        font-weight: 600;
+        padding: 4px 0;
+
+    }
+
+
+    .title-role p{
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-size: 17px;
+        color: #f6d273;
+        padding: 6px 0;
+
+    }
+
+
 
 
 

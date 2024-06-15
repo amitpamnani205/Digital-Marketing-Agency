@@ -1,45 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Change Icon Color on Hover with Delay</title>
-  <style>
-    ul {
-      padding: 0;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Design with Hover Effect</title>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #1b1b1b;
+}
 
-    li {
-      list-style: none;
-      cursor: pointer; /* Makes the list item clickable */
-      padding: 10px;
-      border: 1px solid #ccc; /* Optional: to visually distinguish the list items */
-      margin-bottom: 5px;
-    }
+.card {
+    position: relative;
+    width: 600px;
+    height: 500px;
+    border-radius: 15px;
+    overflow: hidden;
+}
 
-    .icon {
-      transition: color 0.3s ease 0.5s; /* Adds a delay and duration to the color change */
-    }
+.card-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
 
-    li:hover .icon {
-      color: red; /* Change this to your desired color */
-    }
-  </style>
+.overlay {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    background-color: #2f5d53;
+    border-radius: 10px;
+    padding: 20px;
+    color: #fff;
+    transition: background-color 0.3s, filter 0.3s;
+    clip-path: polygon(0 0, calc(100% - 20px) 0, 100% 50%, calc(100% - 20px) 100%, 0 100%);
+}
+
+.card:hover .overlay {
+    background-color: #f0c267;
+}
+
+.card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+    transition: background 0.3s;
+    z-index: 1;
+}
+
+.card:hover::before {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+}
+
+.overlay {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    background-color: #2f5d53;
+    border-radius: 10px;
+    padding: 20px;
+    color: #fff;
+    transition: background-color 0.3s, filter 0.3s;
+    clip-path: polygon(0 0, calc(100% - 20px) 0, 100% 50%, calc(100% - 20px) 100%, 0 100%);
+    z-index: 2;
+}
+
+.client-info {
+    margin-right: 20px;
+}
+
+.label {
+    font-size: 14px;
+    color: #b0c4b1;
+}
+
+.name {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 5px 0 0;
+}
+
+.project-info {
+    flex-grow: 1;
+}
+
+.project-title {
+    font-size: 24px;
+    margin: 0;
+}
+
+.project-subtitle {
+    font-size: 16px;
+    color: #f0c267;
+    margin: 5px 0 0;
+}
+
+.card:hover .project-subtitle {
+    color: #2f5d53;
+}
+
+</style>
 </head>
 <body>
-  <ul>
-    <li>
-      <i class="icon">★</i>
-      Item 1
-    </li>
-    <li>
-      <i class="icon">★</i>
-      Item 2
-    </li>
-    <li>
-      <i class="icon">★</i>
-      Item 3
-    </li>
-  </ul>
+    <div class="card">
+        <img src="images/prj1.png" alt="Background Image" class="card-image">
+        <div class="overlay">
+            <div class="client-info">
+                <p class="label">Client</p>
+                <p class="name">John Doe</p>
+            </div>
+            <div class="project-info">
+                <h2 class="project-title">Web Development</h2>
+                <p class="project-subtitle">Develop</p>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
