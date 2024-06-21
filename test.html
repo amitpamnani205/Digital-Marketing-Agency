@@ -3,133 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Card Design with Hover Effect</title>
+    <title>Welcome to Payee</title>
 <style>
     body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
     margin: 0;
-    background-color: #1b1b1b;
+    font-family: sans-serif;
 }
 
-.card {
-    position: relative;
-    width: 600px;
-    height: 500px;
-    border-radius: 15px;
-    overflow: hidden;
+header {
+    background-color: #f0f2f5;
+    padding: 20px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.card-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-}
-
-.overlay {
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-    right: 20px;
+.header-content {
     display: flex;
     align-items: center;
-    background-color: #2f5d53;
-    border-radius: 10px;
-    padding: 20px;
-    color: #fff;
-    transition: background-color 0.3s, filter 0.3s;
-    clip-path: polygon(0 0, calc(100% - 20px) 0, 100% 50%, calc(100% - 20px) 100%, 0 100%);
+    justify-content: center; /* Center elements horizontally */
 }
 
-.card:hover .overlay {
-    background-color: #f0c267;
-}
-
-.card::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
-    transition: background 0.3s;
-    z-index: 1;
-}
-
-.card:hover::before {
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
-}
-
-.overlay {
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-    right: 20px;
+.time-battery {
     display: flex;
     align-items: center;
-    background-color: #2f5d53;
-    border-radius: 10px;
-    padding: 20px;
-    color: #fff;
-    transition: background-color 0.3s, filter 0.3s;
-    clip-path: polygon(0 0, calc(100% - 20px) 0, 100% 50%, calc(100% - 20px) 100%, 0 100%);
-    z-index: 2;
-}
-
-.client-info {
     margin-right: 20px;
 }
 
-.label {
-    font-size: 14px;
-    color: #b0c4b1;
+.battery {
+    margin-left: 10px;
 }
 
-.name {
-    font-size: 18px;
-    font-weight: bold;
-    margin: 5px 0 0;
+.app-logo {
+    text-align: center;
 }
 
-.project-info {
-    flex-grow: 1;
-}
-
-.project-title {
-    font-size: 24px;
+h1 {
+    font-size: 2em;
     margin: 0;
 }
 
-.project-subtitle {
-    font-size: 16px;
-    color: #f0c267;
-    margin: 5px 0 0;
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 80px);
 }
 
-.card:hover .project-subtitle {
-    color: #2f5d53;
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 50%; /* Responsive width */
+    margin: 0 auto; /* Center horizontally on smaller screens */
+}
+
+button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
 }
 
 </style>
 </head>
 <body>
-    <div class="card">
-        <img src="images/prj1.png" alt="Background Image" class="card-image">
-        <div class="overlay">
-            <div class="client-info">
-                <p class="label">Client</p>
-                <p class="name">John Doe</p>
+    <header>
+        <div class="header-content">
+            <div class="time-battery">
+                <span>9:41</span>
+                <span class="battery">1  32%</span>
             </div>
-            <div class="project-info">
-                <h2 class="project-title">Web Development</h2>
-                <p class="project-subtitle">Develop</p>
+            <div class="app-logo">
+                <p>Welcome To</p>
+                <h1>Payee</h1>
             </div>
         </div>
-    </div>
+    </header>
+    <main>
+        <div class="buttons">
+            <button>Sign In</button>
+            <button>Sign Up</button>
+        </div>
+    </main>
 </body>
 </html>

@@ -585,6 +585,146 @@
 
     }
 
+    .little-light-bg{
+        background-color: #1d2827;
+        height: 1900px;
+       
+    }
+
+    .inside-content {
+        display: grid;
+        grid-template-columns: 96%;
+        padding-top: 200px;
+    }
+
+    .left-why-choose img{
+        width: 100%;
+        height: 90%;
+        object-fit: cover;
+        border-radius: 0 40px 40px 0;
+    }
+
+    .right-why-choose {
+        margin-left: 20px;
+        position: relative;
+
+    }
+
+    .why-choose_heading{
+        padding: 20px 30px;
+        background-color: rgba(255, 255, 255, .06);
+        color: #f6d273;
+        font-weight: 400;
+        border-radius: 5px;
+        display: inline-block;
+        font-family: "Roboto", sans-serif;
+        font-size: 18px;
+        margin: 50px 0;
+    }
+    
+    .right-why-choose h2{
+        font-size: 2.5rem;
+        font-family: "Outfit", sans-serif;
+        font-weight: 600;
+        color: #ffffff;
+    }
+   
+
+    .right-title p{
+        font-family: "Outfit", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 1.1rem;
+        color: #d0d0d0;
+
+        margin: 54px 0;
+    }
+
+    .awards{
+        width: 100%;
+        background-color: #30665f;
+    
+        padding: 25px 17px;
+
+        border-radius: 10px;
+    }
+
+    .award-title{
+
+        border-bottom: 2px solid rgba(20, 34, 32, .36);
+        padding-bottom: 60px;
+    }
+
+    .left-award-title{
+        display: flex;
+        margin-right: 40px;
+    }
+
+    .right-award-title{
+        display: flex;
+        padding-top: 40px;
+    }
+
+    .award-title img{
+        width: 40px;
+    }
+
+    .award-title h3{
+        font-size: 1.3rem;
+        font-family: "Outfit", sans-serif;
+        font-weight: 800;
+        color: #ffffff;
+        padding: 3px 18px;
+    }
+
+    .awards ul li{
+        display: flex;
+        list-style: none;
+        margin: 60px 0;
+
+    }
+
+    .ul-award p{
+        font-family: "Outfit", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 1.1rem;
+        color: #d0d0d0;
+        padding-left: 20px;
+
+   
+    }
+
+    .video-section{
+        display: flex;
+        justify-content: center;
+        margin: 100px 0;
+        position: relative;
+
+    }
+
+    .video-section img{
+        width: 98%;
+        border-radius: 10px 10px 0 0;
+    }
+    .play-button{
+        position: absolute;
+        top: 40%;
+        background-color: #f6d273;
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+    }
+
+    .play-button a{
+        position: absolute;
+        top: 39px;
+        left: 44px;
+        color: #d0d0d0;
+        font-size: 25px;
+    }
+
+
 
 
 
